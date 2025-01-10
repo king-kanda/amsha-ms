@@ -48,59 +48,55 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Units",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
+          title: "Tenants",
           url: "#",
         },
         {
-          title: "Starred",
+          title: "Maintenance",
           url: "#",
         },
         {
-          title: "Settings",
+          title: "Air Bnbs",
           url: "#",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Leases",
       url: "#",
       icon: Bot,
       items: [
         {
-          title: "Genesis",
+          title: "Lease Agreements",
           url: "#",
         },
         {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
+          title: "Rental Payments",
           url: "#",
         },
       ],
     },
     {
-      title: "Documentation",
+      title: "Reports",
       url: "#",
       icon: BookOpen,
       items: [
         {
-          title: "Introduction",
+          title: "Financial Reports",
           url: "#",
         },
         {
-          title: "Get Started",
+          title: "Occupancy Reports",
           url: "#",
         },
         {
-          title: "Tutorials",
+          title: "Maintenance Summary",
           url: "#",
         },
         {
@@ -127,7 +123,7 @@ const data = {
           url: "#",
         },
         {
-          title: "Limits",
+          title: "System Preferences",
           url: "#",
         },
       ],
@@ -135,17 +131,17 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
+      name: "Calendar",
       url: "#",
       icon: Frame,
     },
     {
-      name: "Sales & Marketing",
+      name: "Document Management",
       url: "#",
       icon: PieChart,
     },
     {
-      name: "Travel",
+      name: "Projects",
       url: "#",
       icon: Map,
     },
