@@ -80,10 +80,12 @@ export function NavUser() {
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <BadgeCheck />
-                Account
-              </DropdownMenuItem>
+                <DropdownMenuItem>
+                    <BadgeCheck />
+                    <Link href={route('profile.edit')} >
+                    Account
+                    </Link>
+                </DropdownMenuItem>
               <DropdownMenuItem>
                 <CreditCard />
                 Billing
@@ -94,7 +96,7 @@ export function NavUser() {
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem >
+            <DropdownMenuItem className="text-red-600" >
                 <LogOut />
                 <Link method="post" href={route('logout')}  as="button" >
                     Log out
