@@ -1,5 +1,3 @@
-"use client"
-
 import { ChevronRight, type LucideIcon } from "lucide-react"
 
 import {
@@ -17,6 +15,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar"
+import { Link } from "@inertiajs/react"
 
 export function NavMain({
   items,
@@ -36,6 +35,14 @@ export function NavMain({
     <SidebarGroup>
       <SidebarGroupLabel>Property</SidebarGroupLabel>
       <SidebarMenu>
+
+            {/* hard coded dashboard links */}
+            <SidebarMenuButton tooltip="ss">
+                <Link href={route('dashboard')}>
+                    <span>Dashboard</span>
+                </Link>
+            </SidebarMenuButton>
+
         {items.map((item) => (
           <Collapsible
             key={item.title}
@@ -48,7 +55,7 @@ export function NavMain({
                 <SidebarMenuButton tooltip={item.title}>
                   {item.icon && <item.icon />}
                   <span>{item.title}</span>
-                  <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
+                  {item.items ?  <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" /> : '' }
                 </SidebarMenuButton>
               </CollapsibleTrigger>
               <CollapsibleContent>

@@ -47,6 +47,7 @@ const data = {
     },
   ],
   navMain: [
+
     {
       title: "Units",
       url: "#",
@@ -120,10 +121,6 @@ const data = {
         },
         {
           title: "Billing",
-          url: "#",
-        },
-        {
-          title: "System Preferences",
           url: "#",
         },
       ],
